@@ -1,0 +1,30 @@
+.user-input {
+  margin-top: auto;
+  position: relative;
+  opacity: 0;
+}
+
+.user-input textarea {
+  width: 100%;
+  height: 1px; /* Make it almost invisible */
+  padding: 0;
+  font-size: 1px;
+  font-family: 'Courier New', monospace;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  resize: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Hide it behind other elements */
+  caret-color: transparent;
+}
+
+.user-input textarea:focus {
+  outline: none;
+}
+
+.user-input textarea::placeholder {
+  color: transparent;
+}

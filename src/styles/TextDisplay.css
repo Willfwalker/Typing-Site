@@ -1,0 +1,80 @@
+.text-display {
+  background-color: #1a1a1a;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #aaaaaa;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.typing-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  position: relative;
+  text-align: center;
+  gap: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.correct {
+  color: #aaaaaa;
+}
+
+.incorrect {
+  color: #ff5555;
+  text-decoration: underline;
+  text-decoration-color: #ff5555;
+}
+
+.current {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  animation: blink 1s infinite;
+}
+
+.remaining {
+  color: #777777;
+}
+
+.current-word {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #aaaaaa;
+  background-color: #1a1a1a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 3px;
+  border: 1px solid #444444;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-family: 'Courier New', monospace;
+  background-color: #333333;
+  color: #aaaaaa;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 1px solid #666666;
+  outline-offset: 1px;
+}
