@@ -4,7 +4,7 @@ import '../styles/UserInput.css';
 interface UserInputProps {
   value: string;
   onChange: (value: string) => void;
-  inputRef: React.RefObject<HTMLTextAreaElement>;
+  inputRef: React.MutableRefObject<HTMLTextAreaElement | null>;
 }
 
 const UserInput: React.FC<UserInputProps> = ({ value, onChange, inputRef }) => {

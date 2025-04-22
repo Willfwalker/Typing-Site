@@ -98,7 +98,7 @@ const TextDisplay: React.FC<TextDisplayProps> = ({ text, userInput }) => {
       <div className="text-content">
         <div className="typing-line">
           {/* Current word being typed */}
-          {currentWord && 'processedLetters' in currentWord ? (
+          {currentWord && 'processedLetters' in currentWord && currentWord.processedLetters ? (
             <span className="word current-word">
               {currentWord.processedLetters.map((letter, index) => (
                 <span
